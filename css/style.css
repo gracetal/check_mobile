@@ -1,14 +1,19 @@
 nav li{
 	padding: 12px;
 	border:1px solid black;
-	border-radius: 5px;
+	border-radius: 40px;
 	background-color: blanchedalmond;
 	display: inline-block;
-	width: 20%;
+	width: 80%;
 	top: 50%;
 	font-family: monospace;
 	text-transform: uppercase;
+}
 
+nav ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 nav{
@@ -20,11 +25,11 @@ nav{
 	background-color:rgb(226, 189, 95);
 	font-weight: bold;
 	border: 1px solid rgb(53, 53, 99);
-	border-radius: 5px;
+	border-radius: 40px;
 }
 
 .skip{
-	padding: 12px;
+	padding: 10px;
 	font-family: monospace;
 	border-radius: 5px;
 	background-color: #c2cc3a;
@@ -32,10 +37,53 @@ nav{
 
 img{
 	margin: 12px;
-	border: 5px solid darkgoldenrod;
-	width: 300px;
-	border-radius: 10px;
+	border: 3px solid black;
+	width: 23%;
+	border-radius:3px;
+  }
+
+#mooncakebaby{
+	  border:0;
+	  width: 10%;
+	  animation-name: movement;
+	  animation-duration: 15s;
+  }
+
+
+@keyframes movement{
+  0% {
+	transform: rotate(45deg);
+    width: 25px;
+  }
+  20% {
+	transform: rotate(0deg)
+	width: 50px;
+  }
+  
 }
+
+@media (prefers-reduced-motion) {
+	#mooncakebaby {
+	  animation-name: movement;
+	  animation-duration: 0s;
+	  transform: rotate(0deg)
+	}
+  }
+/* .container{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr; 
+row-gap: 30px;
+
+ } */
+
+
+.pics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
 
 .center {
 	display: block;
@@ -45,36 +93,108 @@ img{
   }
 
 img:hover{
-	filter: grayscale();
+	/* filter: grayscale(); */
 	box-shadow: indianred;
 }
 
 body{
 	background-color: rgb(41, 36, 36);
+	background-image: url(../images/bg_blackboard.jpg);
 	box-shadow: 2px 4px #c7e2c7;
-	
 }
 
 h1{
 	font-size: 30px;
 	color:blanchedalmond;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: 'Nunito', sans-serif;
 	margin: 50px;
 	text-align: center;
 	padding:15px;
 }
 
 p{
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: 'Nunito', sans-serif;
 	color:blanchedalmond;
 	margin:  20px 80px;
 	text-align: center;
 	padding:15px;
-	line-height: 1.5;
+	line-height: 1.8;
 	
 }
 
 #recipe{
 	border: 1px solid blanchedalmond;
 	padding:10%;
+}
+
+form {
+	border: 3px solid black;
+	background-color: blanchedalmond;
+	margin: 5%;
+	font-family: 'Nunito', sans-serif;
+}
+
+fieldset{
+	display: block;
+	margin: 3%;
+	margin-top: 5%;
+}
+legend{ 
+	font-size: 125%;
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+  label{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right:10px;
+	width:15%;
+  }
+
+
+  input {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+
+  span{
+	margin-left:20%;
+	font-family: italic;
+	font-weight: bold;
+  }
+  
+  textarea{
+	width: 70%;
+	height: 20vh;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+
+  input[type=submit] {
+
+	background-color: olive;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+
+  }
+  
+  input[type=submit]:hover {
+	opacity: 0.8;
+  }
+
+footer{
+	background:olive;
 }
