@@ -36,9 +36,9 @@ nav{
 }
 
 img{
-	margin: 12px;
+	margin: 10px;
 	border: 3px solid black;
-	width: 23%;
+	width: 70%;
 	border-radius:3px;
   }
 
@@ -85,11 +85,29 @@ row-gap: 30px;
 	justify-content: center;
   }
 
+.imgs{
+	display: grid;
+	grid-column: auto;
+	justify-items: center;
+}
+
+.horo{
+	grid-column: 1 /span 2;
+	width: 85%;
+}
+
 .center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+  }
+
+.centar {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
   }
 
 img:hover{
@@ -115,7 +133,7 @@ h1{
 p{
 	font-family: 'Nunito', sans-serif;
 	color:blanchedalmond;
-	margin:  20px 80px;
+	margin:  20px 10%;
 	text-align: center;
 	padding:15px;
 	line-height: 1.8;
