@@ -177,6 +177,9 @@ legend{
 	width:15%;
   }
 
+  label#check_id{
+	  width: 70%
+  }
 
   input {
 	width: 70%;
@@ -185,6 +188,10 @@ legend{
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
+  }
+
+  input#check_id{
+	width:20%;
   }
 
   span{
