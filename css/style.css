@@ -85,16 +85,23 @@ row-gap: 30px;
 	justify-content: center;
   }
 
+  .flex_img{
+	width: 23%;
+}
+
 .imgs{
 	display: grid;
 	grid-column: auto;
 	justify-items: center;
 }
 
+
 .horo{
 	grid-column: 1 /span 2;
 	width: 85%;
 }
+
+
 
 .center {
 	display: block;
